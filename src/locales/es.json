@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "games": "Juegos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Descubre Juegos de Mesa Increíbles",
+    "subtitle": "Únete a nuestra comunidad de entusiastas de juegos de mesa y explora un mundo de diversión estratégica",
+    "cta": "Explorar Juegos"
+  },
+  "games": {
+    "title": "Juegos Destacados",
+    "subtitle": "Descubre nuestra colección de juegos de mesa cuidadosamente seleccionados",
+    "playerCount": "Jugadores",
+    "duration": "Duración",
+    "difficulty": "Dificultad",
+    "difficultyLevels": {
+      "easy": "Fácil",
+      "medium": "Medio",
+      "hard": "Difícil"
+    }
+  },
+  "about": {
+    "title": "Acerca de Nuestro Grupo",
+    "subtitle": "Somos apasionados por unir a las personas a través de la alegría de los juegos de mesa",
+    "description": "Nuestro grupo fue fundado con una misión simple: crear una comunidad acogedora donde los entusiastas de los juegos de mesa puedan reunirse, jugar y compartir su amor por los juegos de mesa estratégicos. Creemos que los juegos de mesa tienen el poder de unir a las personas, fomentar la creatividad y crear amistades duraderas.",
+    "mission": "Nuestra Misión",
+    "missionText": "Promover la alegría de los juegos de mesa y crear una comunidad inclusiva para jugadores de todos los niveles.",
+    "values": "Nuestros Valores",
+    "valuesList": [
+      "Inclusividad y ambiente acogedor",
+      "Pensamiento estratégico y creatividad",
+      "Interacción social y amistad",
+      "Aprendizaje continuo y crecimiento"
+    ]
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¿Listo para unirte a nuestra comunidad de juegos de mesa?",
+    "email": "Envíanos un email",
+    "location": "Ubicación",
+    "socialMedia": "Síguenos en redes sociales",
+    "joinUs": "Únete a Nuestra Comunidad"
+  },
+  "footer": {
+    "copyright": "© 2024 Comunidad de Juegos de Mesa. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español",
+    "ca": "Catalán"
+  }
+} 

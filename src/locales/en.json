@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "games": "Games",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover Amazing Board Games",
+    "subtitle": "Join our community of board game enthusiasts and explore a world of strategic fun",
+    "cta": "Explore Games"
+  },
+  "games": {
+    "title": "Featured Games",
+    "subtitle": "Discover our collection of carefully selected board games",
+    "playerCount": "Players",
+    "duration": "Duration",
+    "difficulty": "Difficulty",
+    "difficultyLevels": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    }
+  },
+  "about": {
+    "title": "About Our Group",
+    "subtitle": "We are passionate about bringing people together through the joy of board games",
+    "description": "Our group was founded with a simple mission: to create a welcoming community where board game enthusiasts can gather, play, and share their love for strategic tabletop games. We believe that board games have the power to bring people together, foster creativity, and create lasting friendships.",
+    "mission": "Our Mission",
+    "missionText": "To promote the joy of board gaming and create an inclusive community for players of all skill levels.",
+    "values": "Our Values",
+    "valuesList": [
+      "Inclusivity and welcoming atmosphere",
+      "Strategic thinking and creativity",
+      "Social interaction and friendship",
+      "Continuous learning and growth"
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to join our board game community?",
+    "email": "Email us",
+    "location": "Location",
+    "socialMedia": "Follow us on social media",
+    "joinUs": "Join Our Community"
+  },
+  "footer": {
+    "copyright": "© 2024 Board Games Community. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish",
+    "ca": "Catalan"
+  }
+} 

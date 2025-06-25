@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Inici",
+    "about": "Sobre nosaltres",
+    "games": "Jocs",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "title": "Descobreix Jocs de Taula Increïbles",
+    "subtitle": "Uneix-te a la nostra comunitat d'entusiastes dels jocs de taula i explora un món de diversió estratègica",
+    "cta": "Explorar Jocs"
+  },
+  "games": {
+    "title": "Jocs Destacats",
+    "subtitle": "Descobreix la nostra col·lecció de jocs de taula acuradament seleccionats",
+    "playerCount": "Jugadors",
+    "duration": "Durada",
+    "difficulty": "Dificultat",
+    "difficultyLevels": {
+      "easy": "Fàcil",
+      "medium": "Mitjà",
+      "hard": "Difícil"
+    }
+  },
+  "about": {
+    "title": "Sobre el Nostre Grup",
+    "subtitle": "Som apassionats per unir les persones a través de l'alegria dels jocs de taula",
+    "description": "El nostre grup va ser fundat amb una missió simple: crear una comunitat acollidora on els entusiastes dels jocs de taula puguin reunir-se, jugar i compartir el seu amor pels jocs de taula estratègics. Creiem que els jocs de taula tenen el poder d'unir les persones, fomentar la creativitat i crear amistats duradores.",
+    "mission": "La Nostra Missió",
+    "missionText": "Promoure l'alegria dels jocs de taula i crear una comunitat inclusiva per a jugadors de tots els nivells.",
+    "values": "Els Nostres Valors",
+    "valuesList": [
+      "Inclusivitat i ambient acollidor",
+      "Pensament estratègic i creativitat",
+      "Interacció social i amistat",
+      "Aprenentatge continu i creixement"
+    ]
+  },
+  "contact": {
+    "title": "Posa't en Contacte",
+    "subtitle": "Preparat per unir-te a la nostra comunitat de jocs de taula?",
+    "email": "Envia'ns un email",
+    "location": "Ubicació",
+    "socialMedia": "Segueix-nos a les xarxes socials",
+    "joinUs": "Uneix-te a la Nostra Comunitat"
+  },
+  "footer": {
+    "copyright": "© 2024 Comunitat de Jocs de Taula. Tots els drets reservats.",
+    "privacy": "Política de Privadesa",
+    "terms": "Termes de Servei"
+  },
+  "language": {
+    "en": "Anglès",
+    "es": "Espanyol",
+    "ca": "Català"
+  }
+} 
