@@ -107,7 +107,7 @@
               <div class="collab-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.collaborations.categories') as unknown as CollaborationCategory[])" :key="index">
                 <h3>{{ category.title }}</h3>
                 <ul class="collab-list">
-                  <li v-for="(item, itemIndex) in category.items" :key="itemIndex">{{ item }}</li>
+                  <li v-for="(item, itemIndex) in (category.items || [])" :key="itemIndex">{{ item }}</li>
                 </ul>
               </div>
             </div>
@@ -217,7 +217,7 @@
             <div class="games-grid">
               <div class="game-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.recommendedGames.categories') as unknown as GameCategory[])" :key="index">
                 <h3><strong>{{ category.title }}</strong></h3>
-                <p class="games-list">{{ category.games.join(', ') }}</p>
+                <p class="games-list">{{ category.games ? category.games.join(', ') : '' }}</p>
               </div>
             </div>
           </div>
