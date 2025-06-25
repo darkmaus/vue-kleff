@@ -4,14 +4,25 @@
       <div class="header-content">
         <!-- Logo -->
         <div class="logo">
-          <h1>🎲 BoardGames</h1>
+          <router-link to="/" class="logo-link">
+            <h1>🎲 BoardGames</h1>
+          </router-link>
         </div>
 
         <!-- Navigation -->
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="#home" class="nav-link">{{ $t('nav.home') }}</a></li>
-            <li><a href="#about" class="nav-link">{{ $t('nav.about') }}</a></li>
+            <li><router-link to="/" class="nav-link">{{ $t('nav.home') }}</router-link></li>
+            <li class="dropdown">
+              <button @click="toggleDropdown" class="nav-link dropdown-toggle">
+                {{ $t('nav.about') }}
+                <span class="dropdown-arrow">▼</span>
+              </button>
+              <ul v-show="isDropdownOpen" class="dropdown-menu">
+                <li><router-link to="/about" @click="closeDropdown" class="dropdown-link">{{ $t('nav.about') }}</router-link></li>
+                <li><router-link to="/press-kit" @click="closeDropdown" class="dropdown-link">{{ $t('nav.pressKit') }}</router-link></li>
+              </ul>
+            </li>
             <li><a href="#games" class="nav-link">{{ $t('nav.games') }}</a></li>
             <li><a href="#contact" class="nav-link">{{ $t('nav.contact') }}</a></li>
           </ul>
@@ -37,8 +48,17 @@
       <!-- Mobile Menu -->
       <nav v-show="isMobileMenuOpen" class="mobile-nav">
         <ul class="mobile-nav-list">
-          <li><a href="#home" @click="closeMobileMenu" class="mobile-nav-link">{{ $t('nav.home') }}</a></li>
-          <li><a href="#about" @click="closeMobileMenu" class="mobile-nav-link">{{ $t('nav.about') }}</a></li>
+          <li><router-link to="/" @click="closeMobileMenu" class="mobile-nav-link">{{ $t('nav.home') }}</router-link></li>
+          <li class="mobile-dropdown">
+            <button @click="toggleMobileDropdown" class="mobile-nav-link mobile-dropdown-toggle">
+              {{ $t('nav.about') }}
+              <span class="dropdown-arrow">▼</span>
+            </button>
+            <ul v-show="isMobileDropdownOpen" class="mobile-dropdown-menu">
+              <li><router-link to="/about" @click="closeMobileMenu" class="mobile-dropdown-link">{{ $t('nav.about') }}</router-link></li>
+              <li><router-link to="/press-kit" @click="closeMobileMenu" class="mobile-dropdown-link">{{ $t('nav.pressKit') }}</router-link></li>
+            </ul>
+          </li>
           <li><a href="#games" @click="closeMobileMenu" class="mobile-nav-link">{{ $t('nav.games') }}</a></li>
           <li><a href="#contact" @click="closeMobileMenu" class="mobile-nav-link">{{ $t('nav.contact') }}</a></li>
         </ul>
@@ -60,6 +80,8 @@ import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
 const isMobileMenuOpen = ref(false)
+const isDropdownOpen = ref(false)
+const isMobileDropdownOpen = ref(false)
 
 const currentLocale = computed({
   get: () => locale.value,
@@ -75,10 +97,39 @@ const changeLanguage = () => {
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
+  if (!isMobileMenuOpen.value) {
+    isMobileDropdownOpen.value = false
+  }
 }
 
 const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
+  isMobileDropdownOpen.value = false
+}
+
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value
+}
+
+const closeDropdown = () => {
+  isDropdownOpen.value = false
+}
+
+const toggleMobileDropdown = () => {
+  isMobileDropdownOpen.value = !isMobileDropdownOpen.value
+}
+
+// Close dropdowns when clicking outside
+const handleClickOutside = (event: Event) => {
+  const target = event.target as HTMLElement
+  if (!target.closest('.dropdown')) {
+    isDropdownOpen.value = false
+  }
+}
+
+// Add click outside listener
+if (typeof window !== 'undefined') {
+  document.addEventListener('click', handleClickOutside)
 }
 
 // Load saved language preference on component mount
@@ -119,6 +170,16 @@ if (savedLanguage && ['en', 'es', 'ca'].includes(savedLanguage)) {
   font-weight: 700;
   color: #1E1E1E;
   margin: 0;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  color: #C73D42;
+  transition: color 0.3s ease;
 }
 
 .nav-list {
@@ -356,5 +417,125 @@ if (savedLanguage && ['en', 'es', 'ca'].includes(savedLanguage)) {
   .nav-link {
     font-size: 1.2rem;
   }
+}
+
+/* ===========================================
+   DROPDOWN MENU STYLES
+   =========================================== */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-arrow,
+.dropdown-toggle:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid rgba(30, 30, 30, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.dropdown-link:hover {
+  background: #ECE9E6;
+  color: #C73D42;
+}
+
+/* Mobile dropdown styles */
+.mobile-dropdown {
+  position: relative;
+}
+
+.mobile-dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.mobile-dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(199, 61, 66, 0.05);
+  border-left: 3px solid #C73D42;
+  margin-left: 1rem;
+}
+
+.mobile-dropdown-link {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #1E1E1E;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+}
+
+.mobile-dropdown-link:hover {
+  color: #C73D42;
+  background: rgba(199, 61, 66, 0.1);
+}
+
+.mobile-dropdown-link:last-child {
+  border-bottom: none;
 }
 </style> 

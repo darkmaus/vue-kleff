@@ -46,6 +46,9 @@ const scrollToGames = () => {
 </script>
 
 <style scoped>
+/* ===========================================
+   HERO SECTION - MAIN LAYOUT
+   =========================================== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -56,6 +59,9 @@ const scrollToGames = () => {
   padding-top: 70px; /* Account for fixed header */
 }
 
+/* ===========================================
+   HERO BACKGROUND
+   =========================================== */
 .hero-background {
   position: absolute;
   top: 0;
@@ -72,10 +78,14 @@ const scrollToGames = () => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="triangles" width="20" height="20" patternUnits="userSpaceOnUse"><polygon points="0,0 10,10 0,20" fill="%23E59C6F" opacity="0.12"/><polygon points="10,0 20,10 10,20" fill="%23D1636D" opacity="0.08"/><polygon points="5,5 15,5 10,15" fill="%23ECE9E6" opacity="0.06"/><polygon points="0,10 5,15 0,20" fill="%23E59C6F" opacity="0.1"/><polygon points="15,5 20,10 15,15" fill="%23D1636D" opacity="0.07"/><polygon points="5,15 10,20 0,20" fill="%23ECE9E6" opacity="0.05"/><polygon points="10,20 20,20 15,15" fill="%23E59C6F" opacity="0.09"/><polygon points="2,2 8,8 2,14" fill="%23D1636D" opacity="0.06"/><polygon points="12,2 18,8 12,14" fill="%23ECE9E6" opacity="0.04"/><polygon points="6,6 12,6 9,12" fill="%23E59C6F" opacity="0.08"/><polygon points="0,6 3,12 0,18" fill="%23D1636D" opacity="0.05"/><polygon points="17,6 20,12 17,18" fill="%23ECE9E6" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23triangles)"/></svg>');
   z-index: -1;
+  animation: patternFloat 20s ease-in-out infinite;
 }
 
+/* ===========================================
+   CONTAINER & CONTENT LAYOUT
+   =========================================== */
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -90,6 +100,9 @@ const scrollToGames = () => {
   align-items: center;
 }
 
+/* ===========================================
+   HERO TEXT CONTENT
+   =========================================== */
 .hero-text {
   color: white;
 }
@@ -110,6 +123,9 @@ const scrollToGames = () => {
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
+/* ===========================================
+   CALL-TO-ACTION BUTTON
+   =========================================== */
 .hero-cta {
   background: #E59C6F;
   color: white;
@@ -130,6 +146,9 @@ const scrollToGames = () => {
   box-shadow: 0 6px 20px rgba(229, 156, 111, 0.4);
 }
 
+/* ===========================================
+   HERO VISUAL - GAME CARDS
+   =========================================== */
 .hero-visual {
   display: flex;
   justify-content: center;
@@ -166,6 +185,7 @@ const scrollToGames = () => {
   font-size: 3rem;
 }
 
+/* Game card positions and animations */
 .card-1 {
   top: 0;
   left: 0;
@@ -190,6 +210,9 @@ const scrollToGames = () => {
   animation: float 3s ease-in-out infinite 1.5s;
 }
 
+/* ===========================================
+   SCROLL INDICATOR
+   =========================================== */
 .scroll-indicator {
   position: absolute;
   bottom: 30px;
@@ -206,6 +229,9 @@ const scrollToGames = () => {
   transform: rotate(45deg);
 }
 
+/* ===========================================
+   ANIMATIONS
+   =========================================== */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -237,6 +263,25 @@ const scrollToGames = () => {
     transform: translateX(-50%) translateY(-5px);
   }
 }
+
+@keyframes patternFloat {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-5px, -3px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(3px, -5px) rotate(-0.3deg);
+  }
+  75% {
+    transform: translate(-2px, 2px) rotate(0.2deg);
+  }
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
 
 /* Tablet styles */
 @media (max-width: 1024px) {

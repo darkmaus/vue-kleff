@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "pressKit": "Press Kit",
     "games": "Games",
     "contact": "Contact"
   },
@@ -35,6 +36,413 @@
       "Social interaction and friendship",
       "Continuous learning and growth"
     ]
+  },
+  "aboutPage": {
+    "heroTitle": "Our Story",
+    "heroSubtitle": "Discover the journey that brought us together and the passion that drives our community",
+    "story": {
+      "title": "How It All Began",
+      "subtitle": "The story behind our board games community",
+      "paragraph1": "In 2018, a small group of friends gathered around a table with a simple goal: to share their love for board games and create meaningful connections. What started as a casual meetup in a local café has grown into a thriving community of over 200 passionate players.",
+      "paragraph2": "Our founders, Sarah and Michael, were inspired by the way board games brought people together, breaking down barriers and creating unforgettable moments. They believed that everyone deserves a place where they can feel welcome, learn new strategies, and make lasting friendships.",
+      "paragraph3": "Today, our community continues to grow, hosting regular events, tournaments, and casual game nights. We've expanded to multiple locations and have become a recognized hub for board game enthusiasts in the region.",
+      "imagePlaceholder": "Community photo coming soon"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To create an inclusive and welcoming environment where people of all backgrounds can discover the joy of board games, develop strategic thinking, and build meaningful relationships through shared experiences."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading board games community that inspires creativity, fosters learning, and brings people together through the universal language of play and strategy."
+    },
+    "values": {
+      "title": "Our Values",
+      "list": [
+        "Inclusivity - Everyone is welcome regardless of experience level",
+        "Learning - We believe in continuous growth and skill development",
+        "Community - Building lasting friendships through shared experiences",
+        "Fun - Creating enjoyable and memorable gaming experiences",
+        "Respect - Treating everyone with kindness and consideration"
+      ]
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "The passionate individuals who make our community thrive",
+      "members": [
+        {
+          "emoji": "👩‍💼",
+          "name": "Sarah Johnson",
+          "role": "Community Director",
+          "description": "Sarah co-founded our group and oversees all community activities. Her passion for strategic games and inclusive leadership has been instrumental in our growth."
+        },
+        {
+          "emoji": "👨‍💼",
+          "name": "Michael Chen",
+          "role": "Events Coordinator",
+          "description": "Michael organizes our tournaments and special events. His attention to detail and love for competitive play ensures every event is memorable."
+        },
+        {
+          "emoji": "👩‍🎓",
+          "name": "Emma Rodriguez",
+          "role": "New Player Liaison",
+          "description": "Emma helps newcomers feel welcome and comfortable. Her patience and teaching skills make learning new games enjoyable for everyone."
+        },
+        {
+          "emoji": "👨‍🎨",
+          "name": "David Kim",
+          "role": "Game Master",
+          "description": "David curates our game library and introduces new titles to the community. His extensive knowledge of board games is invaluable."
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Milestones that mark our community's growth and success",
+      "list": [
+        {
+          "icon": "🎉",
+          "title": "Community Launch",
+          "description": "Successfully launched our board games community with 15 founding members",
+          "year": "2018"
+        },
+        {
+          "icon": "🏆",
+          "title": "First Tournament",
+          "description": "Hosted our inaugural tournament with 50 participants",
+          "year": "2019"
+        },
+        {
+          "icon": "🤝",
+          "title": "Partnership Established",
+          "description": "Formed partnerships with local game stores and cafes",
+          "year": "2020"
+        },
+        {
+          "icon": "📈",
+          "title": "100+ Members",
+          "description": "Reached our first 100 active community members",
+          "year": "2021"
+        },
+        {
+          "icon": "🌟",
+          "title": "Regional Recognition",
+          "description": "Received recognition as the best board games community in the region",
+          "year": "2022"
+        },
+        {
+          "icon": "🎯",
+          "title": "200+ Members",
+          "description": "Celebrated reaching 200 active community members",
+          "year": "2023"
+        }
+      ]
+    },
+    "stats": {
+      "list": [
+        {
+          "number": "200+",
+          "label": "Active Members"
+        },
+        {
+          "number": "50+",
+          "label": "Games in Library"
+        },
+        {
+          "number": "24",
+          "label": "Events per Year"
+        },
+        {
+          "number": "5",
+          "label": "Years of Community"
+        }
+      ]
+    },
+    "join": {
+      "title": "Ready to Join Us?",
+      "description": "Whether you're a seasoned player or just starting your board game journey, there's a place for you in our community.",
+      "contactBtn": "Get in Touch",
+      "gamesBtn": "Explore Games"
+    }
+  },
+  "pressKit": {
+    "heroTitle": "PRESS KIT – KLEFF",
+    "heroSubtitle": "The largest board games community in Europe",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "description": "KLEFF was born in late 2019 as Barcelona's first <strong>ludic afterwork</strong>. Our goal is to <strong>connect people</strong> through board games in an inclusive and multicultural environment.",
+      "stats": [
+        {
+          "icon": "📍",
+          "text": "<strong>Current headquarters:</strong> L'Estació - Espai Gastronòmic, Estació de França, Barcelona."
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>+300</strong> attendees per event"
+        },
+        {
+          "icon": "🧩",
+          "text": "<strong>More than 200</strong> games available"
+        },
+        {
+          "icon": "📈",
+          "text": "<strong>25%</strong> annual growth"
+        }
+      ]
+    },
+    "targetAudience": {
+      "title": "Target Audience",
+      "items": [
+        {
+          "icon": "🌍",
+          "text": "<strong>Languages:</strong> Spanish, Catalan and English"
+        },
+        {
+          "icon": "🎮",
+          "text": "<strong>Players:</strong> novices, casual and expert players"
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>Age:</strong> from 14 years old (average: 20-35 years)"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "text": "<strong>Format:</strong> individuals, couples, families or groups"
+        }
+      ]
+    },
+    "events": {
+      "title": "Event Types",
+      "frequency": "Frequency",
+      "event": "Event",
+      "description": "Description",
+      "list": [
+        {
+          "frequency": "Weekly",
+          "name": "Game Night",
+          "description": "Open game library and scheduled games of <em>Catan</em>, <em>Blood on the Clocktower</em>, etc."
+        },
+        {
+          "frequency": "Occasional",
+          "name": "Ludic Slow Dating",
+          "description": "Connection between people through social games"
+        },
+        {
+          "frequency": "Monthly",
+          "name": "Tournaments",
+          "description": "Competitions of different games"
+        },
+        {
+          "frequency": "Monthly",
+          "name": "Demo Days",
+          "description": "Publishers and authors teach their games"
+        },
+        {
+          "frequency": "Annual",
+          "name": "Carnival Game Night",
+          "description": "Costume night"
+        },
+        {
+          "frequency": "Annual",
+          "name": "Halloween Game Night",
+          "description": "Themed edition"
+        },
+        {
+          "frequency": "Annual",
+          "name": "X-Mas Game Night",
+          "description": "Charity event for Hospital Sant Joan de Déu"
+        }
+      ]
+    },
+    "communities": {
+      "title": "Our Communities",
+      "list": [
+        {
+          "icon": "🎭",
+          "text": "<strong>Blood on the Clocktower</strong> – Hidden role games (min. 2 games/week)"
+        },
+        {
+          "icon": "🌍",
+          "text": "<strong>Catan</strong> – Active community with frequent tournaments"
+        },
+        {
+          "icon": "⚔️",
+          "text": "<strong>Unmatched</strong> – Combat game with regular events"
+        },
+        {
+          "icon": "🕵️",
+          "text": "<strong>Hidden Roles</strong> – Social deduction games"
+        }
+      ]
+    },
+    "collaborations": {
+      "title": "Collaborations",
+      "categories": [
+        {
+          "title": "Publishers",
+          "items": [
+            "DEVIR",
+            "Maldito Games",
+            "GDM Games",
+            "Magic Box",
+            "Asmodee",
+            "Key Enigma",
+            "Toysline"
+          ]
+        },
+        {
+          "title": "Stores",
+          "items": [
+            "Mathom",
+            "The Curiosity Shop",
+            "Gameria",
+            "Kaburi"
+          ]
+        },
+        {
+          "title": "Entities",
+          "items": [
+            "CNL",
+            "Espai de Joc 0-99",
+            "Espai de Jocs Sant Andreu",
+            "Movistar Center",
+            "BNGrup",
+            "Checkpoint Gaming"
+          ]
+        }
+      ]
+    },
+    "socialReach": {
+      "title": "Social Media Reach",
+      "platform": "Platform",
+      "followers": "Followers",
+      "platforms": [
+        {
+          "name": "Instagram",
+          "followers": "10.2k"
+        },
+        {
+          "name": "Meetup",
+          "followers": "10.7k"
+        },
+        {
+          "name": "WhatsApp",
+          "followers": "1.8k"
+        },
+        {
+          "name": "Telegram",
+          "followers": "1k"
+        }
+      ]
+    },
+    "mediaPresence": {
+      "title": "Media Presence",
+      "viewArticles": "View Articles and Clips",
+      "outlets": [
+        {
+          "text": "<strong>El Periódico</strong> (several articles)"
+        },
+        {
+          "text": "<strong>RTVE</strong> – <em>Punts de Vista</em> and <em>Culturas 2</em>"
+        },
+        {
+          "text": "<strong>Time Out</strong>, <strong>2d6 Magazine</strong>"
+        },
+        {
+          "text": "<strong>Vidas Infinitas</strong> (podcast)"
+        },
+        {
+          "text": "<strong>Sara Postcard</strong> (Viral Reel)"
+        },
+        {
+          "text": "<strong>Cadena Ser – Aquí Barcelona</strong>"
+        }
+      ]
+    },
+    "whatWeOffer": {
+      "seeking": {
+        "title": "What We're Looking For",
+        "items": [
+          "New venues",
+          "Sponsors",
+          "Support in promotion and event creation"
+        ]
+      },
+      "providing": {
+        "title": "What We Offer",
+        "items": [
+          "Visibility and advertising",
+          "Appearance in promotional materials",
+          "Physical presence at events"
+        ]
+      }
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "placeholder": "Photo gallery coming soon",
+      "viewGallery": "View Complete Gallery"
+    },
+    "recommendedGames": {
+      "title": "Recommended Games",
+      "categories": [
+        {
+          "title": "Are you two?",
+          "games": ["Jaipur", "Azul", "Lost Cities"]
+        },
+        {
+          "title": "Party?",
+          "games": ["Secret Hitler", "Wavelength", "Scrawl"]
+        },
+        {
+          "title": "Something quick?",
+          "games": ["Danger", "Virus", "Trio", "Hanabi"]
+        },
+        {
+          "title": "More complex?",
+          "games": ["Terraforming Mars", "Bitoku", "Darwin's Journey"]
+        }
+      ]
+    },
+    "location": {
+      "title": "Location",
+      "venue": "L'Estació Espai Gastronòmic",
+      "address": "Av. del Marquès de l'Argentera, 6, 8 – 08002 Barcelona",
+      "description": "More than 300 board games are waiting for you."
+    },
+    "contact": {
+      "title": "Contact",
+      "links": [
+        {
+          "icon": "📧",
+          "text": "hola@kleff.es",
+          "url": "mailto:hola@kleff.es"
+        },
+        {
+          "icon": "🌐",
+          "text": "kleff.es",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📱",
+          "text": "Instagram @kleff.bcn",
+          "url": "https://www.instagram.com/kleff.bcn"
+        },
+        {
+          "icon": "💬",
+          "text": "WhatsApp and Telegram",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📍",
+          "text": "Meetup",
+          "url": "https://www.meetup.com/es/k-leff"
+        }
+      ]
+    },
+    "cta": {
+      "question1": "Do you like board games? Want to meet new people and play while having a drink?",
+      "callToAction": "Join the <strong>KLEFFER</strong> community and don't miss anything!"
+    }
   },
   "contact": {
     "title": "Get in Touch",

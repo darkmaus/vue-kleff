@@ -1,0 +1,227 @@
+<template>
+  <section class="press-kit container mx-auto px-4 py-10 space-y-16">
+
+    <!-- Título Principal -->
+    <header class="text-center space-y-4">
+      <h1 class="text-4xl font-bold">🎲 PRESS KIT – KLEFF</h1>
+      <p class="text-xl font-semibold text-gray-600">La comunidad de juegos de mesa más grande de Europa</p>
+    </header>
+
+    <!-- ¿Quiénes Somos? -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📍 ¿Quiénes somos?</h2>
+      <p>KLEFF nace a finales de 2019 como el primer <strong>afterwork lúdico</strong> de Barcelona. Nuestro objetivo es <strong>conectar personas</strong> a través de juegos de mesa en un ambiente inclusivo y multicultural.</p>
+      <ul class="mt-4 list-disc list-inside">
+        <li><strong>Sede actual:</strong> L’Estació - Espai Gastronòmic, Estació de França</li>
+        <li><strong>Asistentes:</strong> +300 por evento</li>
+        <li><strong>Juegos disponibles:</strong> +200</li>
+        <li><strong>Crecimiento anual:</strong> 25%</li>
+      </ul>
+    </section>
+
+    <!-- Público Objetivo -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">🎯 Público Objetivo</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Idiomas: Español, Catalán e Inglés</li>
+        <li>Jugadores: novatos, casuales y expertos</li>
+        <li>Edad: desde 14 años (media: 20–35 años)</li>
+        <li>Formato: personas solas, parejas, grupos, familias</li>
+      </ul>
+    </section>
+
+    <!-- Tipos de Eventos -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📅 Tipos de Eventos</h2>
+      <table class="w-full text-left border border-gray-300">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="p-2">Frecuencia</th>
+            <th class="p-2">Evento</th>
+            <th class="p-2">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="event in events" :key="event.name" class="border-t">
+            <td class="p-2">{{ event.frequency }}</td>
+            <td class="p-2 font-semibold">{{ event.name }}</td>
+            <td class="p-2">{{ event.description }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Comunidades -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">🧠 Nuestras Comunidades</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Blood on the Clocktower:</strong> mínimo 2 partidas semanales</li>
+        <li><strong>Catan:</strong> torneos y comunidad activa</li>
+        <li><strong>Unmatched:</strong> torneos regulares</li>
+        <li><strong>Roles ocultos:</strong> deducción social e identidades secretas</li>
+      </ul>
+    </section>
+
+    <!-- Colaboraciones -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">🤝 Colaboraciones</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">Editoriales</h3>
+          <ul class="list-disc list-inside">
+            <li v-for="item in editoriales" :key="item">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Tiendas</h3>
+          <ul class="list-disc list-inside">
+            <li v-for="item in tiendas" :key="item">{{ item }}</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Entidades</h3>
+          <ul class="list-disc list-inside">
+            <li v-for="item in entidades" :key="item">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📈 Alcance en Redes Sociales</h2>
+      <table class="w-full text-left border border-gray-300">
+        <thead class="bg-gray-100">
+          <tr><th class="p-2">Plataforma</th><th class="p-2">Seguidores</th></tr>
+        </thead>
+        <tbody>
+          <tr v-for="(count, network) in redes" :key="network" class="border-t">
+            <td class="p-2">{{ network }}</td>
+            <td class="p-2">{{ count }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Presencia en Medios -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📰 Presencia en Medios</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li v-for="link in medios" :key="link.url">
+          <a :href="link.url" target="_blank" class="text-blue-600 underline">{{ link.name }}</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ¿Qué Buscamos / Ofrecemos? -->
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-xl font-bold mb-2">🎯 ¿Qué buscamos?</h3>
+          <ul class="list-disc list-inside">
+            <li>Espacios nuevos</li>
+            <li>Patrocinio económico</li>
+            <li>Apoyo en difusión y eventos</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-2">💡 ¿Qué ofrecemos?</h3>
+          <ul class="list-disc list-inside">
+            <li>Publicidad y visibilidad</li>
+            <li>Aparición en carteles</li>
+            <li>Presencia en eventos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">🖼 Recopilatorio Fotográfico</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img v-for="(img, index) in fotos" :key="index" :src="img" class="rounded shadow" />
+      </div>
+      <a href="https://drive.google.com/drive/folders/1mff6ikHdJJ44H-lS-qsC-mHvG5F40Q3a" target="_blank" class="text-blue-600 underline mt-2 inline-block">Ver galería completa</a>
+    </section>
+
+    <!-- Juegos Recomendados -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">🕹 Juegos Recomendados</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>¿Sois dos?</strong> Jaipur, Azul, Lost Cities</li>
+        <li><strong>¿Fiesta?</strong> Secret Hitler, Wavelength, Scrawl</li>
+        <li><strong>¿Algo rápido?</strong> Danger, Virus, Trio, Hanabi</li>
+        <li><strong>¿Más complejo?</strong> Terraforming Mars, Bitoku, Darwin’s Journey</li>
+      </ul>
+    </section>
+
+    <!-- Ubicación -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📍 Ubicación</h2>
+      <p><strong>L’Estació Espai Gastronòmic</strong></p>
+      <p>Av. del Marquès de l'Argentera, 6, 8 – 08002, Barcelona</p>
+      <p>Más de 300 juegos de mesa te están esperando.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">📞 Contacto</h2>
+      <ul class="list-inside list-disc">
+        <li>Email: <a href="mailto:hola@kleff.es" class="text-blue-600 underline">hola@kleff.es</a></li>
+        <li>Web: <a href="https://kleff.es" target="_blank" class="text-blue-600 underline">kleff.es</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/kleff.bcn" target="_blank" class="text-blue-600 underline">@kleff.bcn</a></li>
+        <li>Meetup: <a href="https://www.meetup.com/es/k-leff" target="_blank" class="text-blue-600 underline">KLEFF en Meetup</a></li>
+      </ul>
+    </section>
+
+    <!-- Mensaje Final -->
+    <footer class="text-center pt-10 border-t">
+      <p class="text-lg font-medium">¿Te gustan los juegos de mesa? ¿Quieres conocer gente nueva y jugar mientras tomas algo?</p>
+      <p class="font-bold text-xl">¡Únete a la comunidad KLEFFER y no te pierdas nada!</p>
+    </footer>
+  </section>
+</template>
+
+<script setup>
+// Datos de ejemplo – sustituir por props o fetch dinámico si se necesita
+
+const events = [
+  { frequency: 'Semanal', name: 'Noche de juegos', description: 'Partidas de Catan, Blood on the Clocktower, etc.' },
+  { frequency: 'Puntual', name: 'Slow Dating Lúdico', description: 'Conexión entre personas mediante juegos sociales.' },
+  { frequency: 'Mensual', name: 'Torneos', description: 'Competencias de distintos juegos.' },
+  { frequency: 'Mensual', name: 'Jornadas de demostración', description: 'Editoriales enseñan a jugar sus juegos.' },
+  { frequency: 'Anual', name: 'Carnival Game Night', description: 'Noche temática con disfraces.' },
+  { frequency: 'Anual', name: 'Halloween Game Night', description: 'Evento especial temático Halloween.' },
+  { frequency: 'Anual', name: 'X-Mas Game Night', description: 'Evento benéfico para niños con cáncer.' }
+];
+
+const editoriales = ['DEVIR', 'Maldito Games', 'GDM Games', 'Magic Box Games', 'Asmodee', 'Key Enigma', 'Toysline'];
+const tiendas = ['Mathom', 'The Curiosity Shop', 'Gameria', 'Kaburi'];
+const entidades = ['CNL', 'Espai de Joc 0-99', 'Espai de Jocs Sant Andreu', 'Movistar Center', 'BNGrup', 'Checkpoint Gaming'];
+
+const redes = {
+  Instagram: '10,2k',
+  Meetup: '10,7k',
+  Whatsapp: '1,8k',
+  Telegram: '1k'
+};
+
+const medios = [
+  { name: 'El Periódico', url: 'https://www.elperiodico.com/es/...' },
+  { name: 'RTVE – Punts de Vista', url: 'https://www.rtve.es/...' },
+  { name: 'Time Out', url: 'https://www.timeout.es/...' },
+  // Agrega más enlaces si lo deseas
+];
+
+const fotos = [
+  'https://drive.google.com/uc?export=view&id=IMAGE_ID_1',
+  'https://drive.google.com/uc?export=view&id=IMAGE_ID_2'
+  // Añadir más imágenes si es necesario
+];
+</script>
+
+<style scoped>
+.container {
+  max-width: 1200px;
+}
+</style>

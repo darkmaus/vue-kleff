@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Acerca de",
+    "pressKit": "Dossier de Prensa",
     "games": "Juegos",
     "contact": "Contacto"
   },
@@ -36,6 +37,413 @@
       "Aprendizaje continuo y crecimiento"
     ]
   },
+  "aboutPage": {
+    "heroTitle": "Nuestra Historia",
+    "heroSubtitle": "Descubre el viaje que nos unió y la pasión que impulsa nuestra comunidad",
+    "story": {
+      "title": "Cómo Todo Comenzó",
+      "subtitle": "La historia detrás de nuestra comunidad de juegos de mesa",
+      "paragraph1": "En 2018, un pequeño grupo de amigos se reunió alrededor de una mesa con un objetivo simple: compartir su amor por los juegos de mesa y crear conexiones significativas. Lo que comenzó como una reunión casual en un café local ha crecido hasta convertirse en una comunidad próspera de más de 200 jugadores apasionados.",
+      "paragraph2": "Nuestros fundadores, Sarah y Michael, se inspiraron en la forma en que los juegos de mesa unían a las personas, rompiendo barreras y creando momentos inolvidables. Creían que todos merecen un lugar donde puedan sentirse bienvenidos, aprender nuevas estrategias y hacer amistades duraderas.",
+      "paragraph3": "Hoy, nuestra comunidad continúa creciendo, organizando eventos regulares, torneos y noches de juegos casuales. Nos hemos expandido a múltiples ubicaciones y nos hemos convertido en un centro reconocido para entusiastas de juegos de mesa en la región.",
+      "imagePlaceholder": "Foto de la comunidad próximamente"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Crear un entorno inclusivo y acogedor donde personas de todos los orígenes puedan descubrir la alegría de los juegos de mesa, desarrollar el pensamiento estratégico y construir relaciones significativas a través de experiencias compartidas."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Ser la comunidad líder de juegos de mesa que inspire creatividad, fomente el aprendizaje y una a las personas a través del lenguaje universal del juego y la estrategia."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "list": [
+        "Inclusividad - Todos son bienvenidos independientemente del nivel de experiencia",
+        "Aprendizaje - Creemos en el crecimiento continuo y el desarrollo de habilidades",
+        "Comunidad - Construir amistades duraderas a través de experiencias compartidas",
+        "Diversión - Crear experiencias de juego agradables y memorables",
+        "Respeto - Tratar a todos con amabilidad y consideración"
+      ]
+    },
+    "team": {
+      "title": "Conoce Nuestro Equipo",
+      "subtitle": "Los individuos apasionados que hacen que nuestra comunidad prospere",
+      "members": [
+        {
+          "emoji": "👩‍💼",
+          "name": "Sarah Johnson",
+          "role": "Directora de Comunidad",
+          "description": "Sarah cofundó nuestro grupo y supervisa todas las actividades de la comunidad. Su pasión por los juegos estratégicos y el liderazgo inclusivo ha sido fundamental en nuestro crecimiento."
+        },
+        {
+          "emoji": "👨‍💼",
+          "name": "Michael Chen",
+          "role": "Coordinador de Eventos",
+          "description": "Michael organiza nuestros torneos y eventos especiales. Su atención al detalle y amor por el juego competitivo asegura que cada evento sea memorable."
+        },
+        {
+          "emoji": "👩‍🎓",
+          "name": "Emma Rodriguez",
+          "role": "Enlace para Nuevos Jugadores",
+          "description": "Emma ayuda a los recién llegados a sentirse bienvenidos y cómodos. Su paciencia y habilidades de enseñanza hacen que aprender nuevos juegos sea agradable para todos."
+        },
+        {
+          "emoji": "👨‍🎨",
+          "name": "David Kim",
+          "role": "Maestro de Juegos",
+          "description": "David cura nuestra biblioteca de juegos e introduce nuevos títulos a la comunidad. Su extenso conocimiento de juegos de mesa es invaluable."
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Nuestros Logros",
+      "subtitle": "Hitos que marcan el crecimiento y éxito de nuestra comunidad",
+      "list": [
+        {
+          "icon": "🎉",
+          "title": "Lanzamiento de la Comunidad",
+          "description": "Lanzamos exitosamente nuestra comunidad de juegos de mesa con 15 miembros fundadores",
+          "year": "2018"
+        },
+        {
+          "icon": "🏆",
+          "title": "Primer Torneo",
+          "description": "Organizamos nuestro torneo inaugural con 50 participantes",
+          "year": "2019"
+        },
+        {
+          "icon": "🤝",
+          "title": "Alianzas Establecidas",
+          "description": "Formamos alianzas con tiendas de juegos y cafés locales",
+          "year": "2020"
+        },
+        {
+          "icon": "📈",
+          "title": "100+ Miembros",
+          "description": "Alcanzamos nuestros primeros 100 miembros activos de la comunidad",
+          "year": "2021"
+        },
+        {
+          "icon": "🌟",
+          "title": "Reconocimiento Regional",
+          "description": "Recibimos reconocimiento como la mejor comunidad de juegos de mesa de la región",
+          "year": "2022"
+        },
+        {
+          "icon": "🎯",
+          "title": "200+ Miembros",
+          "description": "Celebramos alcanzar 200 miembros activos de la comunidad",
+          "year": "2023"
+        }
+      ]
+    },
+    "stats": {
+      "list": [
+        {
+          "number": "200+",
+          "label": "Miembros Activos"
+        },
+        {
+          "number": "50+",
+          "label": "Juegos en Biblioteca"
+        },
+        {
+          "number": "24",
+          "label": "Eventos por Año"
+        },
+        {
+          "number": "5",
+          "label": "Años de Comunidad"
+        }
+      ]
+    },
+    "join": {
+      "title": "¿Listo para Unirte?",
+      "description": "Ya seas un jugador experimentado o apenas estés comenzando tu viaje en los juegos de mesa, hay un lugar para ti en nuestra comunidad.",
+      "contactBtn": "Ponte en Contacto",
+      "gamesBtn": "Explorar Juegos"
+    }
+  },
+  "pressKit": {
+    "heroTitle": "PRESS KIT – KLEFF",
+    "heroSubtitle": "La comunidad de juegos de mesa más grande de Europa",
+    "whoWeAre": {
+      "title": "¿Quiénes somos?",
+      "description": "KLEFF nace a finales de 2019 como el primer <strong>afterwork lúdico</strong> de Barcelona. Nuestro objetivo es <strong>conectar personas</strong> a través de los juegos de mesa en un ambiente inclusivo y multicultural.",
+      "stats": [
+        {
+          "icon": "📍",
+          "text": "<strong>Sede actual:</strong> L'Estació - Espai Gastronòmic, Estació de França, Barcelona."
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>+300</strong> asistentes por evento"
+        },
+        {
+          "icon": "🧩",
+          "text": "<strong>Más de 200</strong> juegos disponibles"
+        },
+        {
+          "icon": "📈",
+          "text": "<strong>25%</strong> de crecimiento anual"
+        }
+      ]
+    },
+    "targetAudience": {
+      "title": "Público Objetivo",
+      "items": [
+        {
+          "icon": "🌍",
+          "text": "<strong>Idiomas:</strong> Español, Catalán e Inglés"
+        },
+        {
+          "icon": "🎮",
+          "text": "<strong>Jugadores:</strong> novatos, casuales y expertos"
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>Edad:</strong> a partir de 14 años (media: 20-35 años)"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "text": "<strong>Formato:</strong> personas solas, parejas, familias o grupos"
+        }
+      ]
+    },
+    "events": {
+      "title": "Tipos de Eventos",
+      "frequency": "Frecuencia",
+      "event": "Evento",
+      "description": "Descripción",
+      "list": [
+        {
+          "frequency": "Semanal",
+          "name": "Noche de juegos",
+          "description": "Ludoteca abierta y partidas programadas de <em>Catan</em>, <em>Blood on the Clocktower</em>, etc."
+        },
+        {
+          "frequency": "Puntual",
+          "name": "Slow Dating Lúdico",
+          "description": "Conexión entre personas a través de juegos sociales"
+        },
+        {
+          "frequency": "Mensual",
+          "name": "Torneos",
+          "description": "Competencias de distintos juegos"
+        },
+        {
+          "frequency": "Mensual",
+          "name": "Jornadas de demostración",
+          "description": "Editoriales y autores enseñan sus juegos"
+        },
+        {
+          "frequency": "Anual",
+          "name": "Carnival Game Night",
+          "description": "Noche de disfraces"
+        },
+        {
+          "frequency": "Anual",
+          "name": "Halloween Game Night",
+          "description": "Edición temática"
+        },
+        {
+          "frequency": "Anual",
+          "name": "X-Mas Game Night",
+          "description": "Evento solidario para Hospital Sant Joan de Déu"
+        }
+      ]
+    },
+    "communities": {
+      "title": "Nuestras Comunidades",
+      "list": [
+        {
+          "icon": "🎭",
+          "text": "<strong>Blood on the Clocktower</strong> – Juegos de roles ocultos (mín. 2 partidas/semana)"
+        },
+        {
+          "icon": "🌍",
+          "text": "<strong>Catan</strong> – Comunidad activa con torneos frecuentes"
+        },
+        {
+          "icon": "⚔️",
+          "text": "<strong>Unmatched</strong> – Juego de enfrentamientos, con eventos regulares"
+        },
+        {
+          "icon": "🕵️",
+          "text": "<strong>Roles ocultos</strong> – Juegos de deducción social"
+        }
+      ]
+    },
+    "collaborations": {
+      "title": "Colaboraciones",
+      "categories": [
+        {
+          "title": "Editoriales",
+          "items": [
+            "DEVIR",
+            "Maldito Games",
+            "GDM Games",
+            "Magic Box",
+            "Asmodee",
+            "Key Enigma",
+            "Toysline"
+          ]
+        },
+        {
+          "title": "Tiendas",
+          "items": [
+            "Mathom",
+            "The Curiosity Shop",
+            "Gameria",
+            "Kaburi"
+          ]
+        },
+        {
+          "title": "Entidades",
+          "items": [
+            "CNL",
+            "Espai de Joc 0-99",
+            "Espai de Jocs Sant Andreu",
+            "Movistar Center",
+            "BNGrup",
+            "Checkpoint Gaming"
+          ]
+        }
+      ]
+    },
+    "socialReach": {
+      "title": "Alcance en Redes Sociales",
+      "platform": "Plataforma",
+      "followers": "Seguidores",
+      "platforms": [
+        {
+          "name": "Instagram",
+          "followers": "10,2k"
+        },
+        {
+          "name": "Meetup",
+          "followers": "10,7k"
+        },
+        {
+          "name": "WhatsApp",
+          "followers": "1,8k"
+        },
+        {
+          "name": "Telegram",
+          "followers": "1k"
+        }
+      ]
+    },
+    "mediaPresence": {
+      "title": "Presencia en Medios",
+      "viewArticles": "Ver artículos y clips",
+      "outlets": [
+        {
+          "text": "<strong>El Periódico</strong> (varios artículos)"
+        },
+        {
+          "text": "<strong>RTVE</strong> – <em>Punts de Vista</em> y <em>Culturas 2</em>"
+        },
+        {
+          "text": "<strong>Time Out</strong>, <strong>2d6 Magazine</strong>"
+        },
+        {
+          "text": "<strong>Vidas Infinitas</strong> (podcast)"
+        },
+        {
+          "text": "<strong>Sara Postcard</strong> (Reel viral)"
+        },
+        {
+          "text": "<strong>Cadena Ser – Aquí Barcelona</strong>"
+        }
+      ]
+    },
+    "whatWeOffer": {
+      "seeking": {
+        "title": "¿Qué buscamos?",
+        "items": [
+          "Nuevos espacios",
+          "Patrocinadores",
+          "Apoyo en difusión y creación de eventos"
+        ]
+      },
+      "providing": {
+        "title": "¿Qué ofrecemos?",
+        "items": [
+          "Visibilidad y publicidad",
+          "Aparición en materiales promocionales",
+          "Presencia física en eventos"
+        ]
+      }
+    },
+    "gallery": {
+      "title": "Recopilatorio Fotográfico",
+      "placeholder": "Galería fotográfica próximamente",
+      "viewGallery": "Ver galería completa"
+    },
+    "recommendedGames": {
+      "title": "Juegos Recomendados",
+      "categories": [
+        {
+          "title": "¿Sois dos?",
+          "games": ["Jaipur", "Azul", "Lost Cities"]
+        },
+        {
+          "title": "¿Fiesta?",
+          "games": ["Secret Hitler", "Wavelength", "Scrawl"]
+        },
+        {
+          "title": "¿Algo rápido?",
+          "games": ["Danger", "Virus", "Trio", "Hanabi"]
+        },
+        {
+          "title": "¿Más complejo?",
+          "games": ["Terraforming Mars", "Bitoku", "Darwin's Journey"]
+        }
+      ]
+    },
+    "location": {
+      "title": "Ubicación",
+      "venue": "L'Estació Espai Gastronòmic",
+      "address": "Av. del Marquès de l'Argentera, 6, 8 – 08002 Barcelona",
+      "description": "Más de 300 juegos de mesa te están esperando."
+    },
+    "contact": {
+      "title": "Contacto",
+      "links": [
+        {
+          "icon": "📧",
+          "text": "hola@kleff.es",
+          "url": "mailto:hola@kleff.es"
+        },
+        {
+          "icon": "🌐",
+          "text": "kleff.es",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📱",
+          "text": "Instagram @kleff.bcn",
+          "url": "https://www.instagram.com/kleff.bcn"
+        },
+        {
+          "icon": "💬",
+          "text": "WhatsApp y Telegram",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📍",
+          "text": "Meetup",
+          "url": "https://www.meetup.com/es/k-leff"
+        }
+      ]
+    },
+    "cta": {
+      "question1": "¿Te gustan los juegos de mesa? ¿Quieres conocer gente nueva y jugar mientras tomas algo?",
+      "callToAction": "¡Únete a la comunidad <strong>KLEFFER</strong> y no te pierdas nada!"
+    }
+  },
   "contact": {
     "title": "Ponte en Contacto",
     "subtitle": "¿Listo para unirte a nuestra comunidad de juegos de mesa?",
@@ -50,8 +458,8 @@
     "terms": "Términos de Servicio"
   },
   "language": {
-    "en": "Inglés",
-    "es": "Español",
-    "ca": "Catalán"
+    "en": "English",
+    "es": "Spanish",
+    "ca": "Catalan"
   }
 } 

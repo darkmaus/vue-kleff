@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Inici",
-    "about": "Sobre nosaltres",
+    "about": "Sobre Nosaltres",
+    "pressKit": "Dossier de Premsa",
     "games": "Jocs",
     "contact": "Contacte"
   },
@@ -12,7 +13,7 @@
   },
   "games": {
     "title": "Jocs Destacats",
-    "subtitle": "Descobreix la nostra col·lecció de jocs de taula acuradament seleccionats",
+    "subtitle": "Descobreix la nostra col·lecció de jocs de taula seleccionats amb cura",
     "playerCount": "Jugadors",
     "duration": "Durada",
     "difficulty": "Dificultat",
@@ -24,8 +25,8 @@
   },
   "about": {
     "title": "Sobre el Nostre Grup",
-    "subtitle": "Som apassionats per unir les persones a través de l'alegria dels jocs de taula",
-    "description": "El nostre grup va ser fundat amb una missió simple: crear una comunitat acollidora on els entusiastes dels jocs de taula puguin reunir-se, jugar i compartir el seu amor pels jocs de taula estratègics. Creiem que els jocs de taula tenen el poder d'unir les persones, fomentar la creativitat i crear amistats duradores.",
+    "subtitle": "Som apassionats per unir persones a través de l'alegria dels jocs de taula",
+    "description": "El nostre grup va ser fundat amb una missió simple: crear una comunitat acollidora on els entusiastes dels jocs de taula puguin reunir-se, jugar i compartir el seu amor pels jocs de taula estratègics. Creiem que els jocs de taula tenen el poder d'unir persones, fomentar la creativitat i crear amistats duradores.",
     "mission": "La Nostra Missió",
     "missionText": "Promoure l'alegria dels jocs de taula i crear una comunitat inclusiva per a jugadors de tots els nivells.",
     "values": "Els Nostres Valors",
@@ -36,12 +37,419 @@
       "Aprenentatge continu i creixement"
     ]
   },
+  "aboutPage": {
+    "heroTitle": "La Nostra Història",
+    "heroSubtitle": "Descobreix el viatge que ens va unir i la passió que impulsa la nostra comunitat",
+    "story": {
+      "title": "Com Va Començar Tot",
+      "subtitle": "La història darrere de la nostra comunitat de jocs de taula",
+      "paragraph1": "El 2018, un petit grup d'amics es va reunir al voltant d'una taula amb un objectiu simple: compartir el seu amor pels jocs de taula i crear connexions significatives. El que va començar com una trobada casual en un cafè local ha crescut fins a convertir-se en una comunitat pròspera de més de 200 jugadors apassionats.",
+      "paragraph2": "Els nostres fundadors, Sarah i Michael, es van inspirar en la manera com els jocs de taula unien persones, enderrocant barreres i creant moments inoblidables. Creien que tothom mereix un lloc on pugui sentir-se benvingut, aprendre noves estratègies i fer amistats duradores.",
+      "paragraph3": "Avui, la nostra comunitat continua creixent, organitzant esdeveniments regulars, tornejos i nits de jocs casuals. Ens hem expandit a múltiples ubicacions i ens hem convertit en un centre reconegut per a entusiastes dels jocs de taula a la regió.",
+      "imagePlaceholder": "Foto de la comunitat aviat"
+    },
+    "mission": {
+      "title": "La Nostra Missió",
+      "description": "Crear un ambient inclusiu i acollidor on persones de tots els orígens puguin descobrir l'alegria dels jocs de taula, desenvolupar el pensament estratègic i construir relacions significatives a través d'experiències compartides."
+    },
+    "vision": {
+      "title": "La Nostra Visió",
+      "description": "Ser la comunitat líder de jocs de taula que inspiri creativitat, fomenti l'aprenentatge iuneixi persones a través del llenguatge universal del joc i l'estratègia."
+    },
+    "values": {
+      "title": "Els Nostres Valors",
+      "list": [
+        "Inclusivitat - Tothom és benvingut independentment del nivell d'experiència",
+        "Aprenentatge - Creiem en el creixement continu i el desenvolupament d'habilitats",
+        "Comunitat - Construir amistats duradores a través d'experiències compartides",
+        "Diversió - Crear experiències de joc agradables i memorables",
+        "Respecte - Tractar a tothom amb amabilitat i consideració"
+      ]
+    },
+    "team": {
+      "title": "Coneix el Nostre Equip",
+      "subtitle": "Els individus apassionats que fan que la nostra comunitat prosperi",
+      "members": [
+        {
+          "emoji": "👩‍💼",
+          "name": "Sarah Johnson",
+          "role": "Directora de Comunitat",
+          "description": "Sarah va cofundar el nostre grup i supervisa totes les activitats de la comunitat. La seva passió pels jocs estratègics i el lideratge inclusiu ha estat fonamental en el nostre creixement."
+        },
+        {
+          "emoji": "👨‍💼",
+          "name": "Michael Chen",
+          "role": "Coordinador d'Esdeveniments",
+          "description": "Michael organitza els nostres tornejos i esdeveniments especials. La seva atenció al detall i amor pel joc competitiu assegura que cada esdeveniment sigui memorable."
+        },
+        {
+          "emoji": "👩‍🎓",
+          "name": "Emma Rodriguez",
+          "role": "Enllaç de Nous Jugadors",
+          "description": "Emma ajuda als nouvinguts a sentir-se benvinguts i còmodes. La seva paciència i habilitats d'ensenyament fan que aprendre nous jocs sigui agradable per a tothom."
+        },
+        {
+          "emoji": "👨‍🎨",
+          "name": "David Kim",
+          "role": "Mestre de Jocs",
+          "description": "David cura la nostra biblioteca de jocs i introdueix nous títols a la comunitat. El seu extens coneixement de jocs de taula és inestimable."
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Els Nostres Assoliments",
+      "subtitle": "Fites que marquen el creixement i èxit de la nostra comunitat",
+      "list": [
+        {
+          "icon": "🎉",
+          "title": "Llançament de la Comunitat",
+          "description": "Vam llançar amb èxit la nostra comunitat de jocs de taula amb 15 membres fundadors",
+          "year": "2018"
+        },
+        {
+          "icon": "🏆",
+          "title": "Primer Torneig",
+          "description": "Vam organitzar el nostre torneig inaugural amb 50 participants",
+          "year": "2019"
+        },
+        {
+          "icon": "🤝",
+          "title": "Aliança Establerta",
+          "description": "Vam formar aliances amb botigues de jocs i cafès locals",
+          "year": "2020"
+        },
+        {
+          "icon": "📈",
+          "title": "100+ Membres",
+          "description": "Vam assolir els nostres primers 100 membres actius de la comunitat",
+          "year": "2021"
+        },
+        {
+          "icon": "🌟",
+          "title": "Reconeixement Regional",
+          "description": "Vam rebre reconeixement com la millor comunitat de jocs de taula de la regió",
+          "year": "2022"
+        },
+        {
+          "icon": "🎯",
+          "title": "200+ Membres",
+          "description": "Vam celebrar assolir 200 membres actius de la comunitat",
+          "year": "2023"
+        }
+      ]
+    },
+    "stats": {
+      "list": [
+        {
+          "number": "200+",
+          "label": "Membres Actius"
+        },
+        {
+          "number": "50+",
+          "label": "Jocs a la Biblioteca"
+        },
+        {
+          "number": "24",
+          "label": "Esdeveniments per Any"
+        },
+        {
+          "number": "5",
+          "label": "Anys de Comunitat"
+        }
+      ]
+    },
+    "join": {
+      "title": "Preparat per Unir-te?",
+      "description": "Ja siguis un jugador experimentat o tot just comencis el teu viatge amb els jocs de taula, hi ha un lloc per a tu a la nostra comunitat.",
+      "contactBtn": "Posa't en Contacte",
+      "gamesBtn": "Explorar Jocs"
+    }
+  },
+  "pressKit": {
+    "heroTitle": "PRESS KIT – KLEFF",
+    "heroSubtitle": "La comunitat de jocs de taula més gran d'Europa",
+    "whoWeAre": {
+      "title": "Qui som?",
+      "description": "KLEFF neix a finals de 2019 com el primer <strong>afterwork lúdic</strong> de Barcelona. El nostre objectiu és <strong>connectar persones</strong> a través dels jocs de taula en un ambient inclusiu i multicultural.",
+      "stats": [
+        {
+          "icon": "📍",
+          "text": "<strong>Seu actual:</strong> L'Estació - Espai Gastronòmic, Estació de França, Barcelona."
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>+300</strong> assistents per esdeveniment"
+        },
+        {
+          "icon": "🧩",
+          "text": "<strong>Més de 200</strong> jocs disponibles"
+        },
+        {
+          "icon": "📈",
+          "text": "<strong>25%</strong> de creixement anual"
+        }
+      ]
+    },
+    "targetAudience": {
+      "title": "Públic Objectiu",
+      "items": [
+        {
+          "icon": "🌍",
+          "text": "<strong>Idiomes:</strong> Espanyol, Català i Anglès"
+        },
+        {
+          "icon": "🎮",
+          "text": "<strong>Jugadors:</strong> novells, casuals i experts"
+        },
+        {
+          "icon": "👥",
+          "text": "<strong>Edat:</strong> a partir de 14 anys (mitjana: 20-35 anys)"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "text": "<strong>Format:</strong> persones soles, parelles, famílies o grups"
+        }
+      ]
+    },
+    "events": {
+      "title": "Tipus d'Esdeveniments",
+      "frequency": "Freqüència",
+      "event": "Esdeveniment",
+      "description": "Descripció",
+      "list": [
+        {
+          "frequency": "Setmanal",
+          "name": "Nit de jocs",
+          "description": "Ludoteca oberta i partides programades de <em>Catan</em>, <em>Blood on the Clocktower</em>, etc."
+        },
+        {
+          "frequency": "Puntual",
+          "name": "Slow Dating Lúdic",
+          "description": "Connexió entre persones a través de jocs socials"
+        },
+        {
+          "frequency": "Mensual",
+          "name": "Torneigs",
+          "description": "Competicions de diferents jocs"
+        },
+        {
+          "frequency": "Mensual",
+          "name": "Jornades de demostració",
+          "description": "Editorials i autors ensenyen els seus jocs"
+        },
+        {
+          "frequency": "Anual",
+          "name": "Carnival Game Night",
+          "description": "Nit de disfresses"
+        },
+        {
+          "frequency": "Anual",
+          "name": "Halloween Game Night",
+          "description": "Edició temàtica"
+        },
+        {
+          "frequency": "Anual",
+          "name": "X-Mas Game Night",
+          "description": "Esdeveniment solidari per Hospital Sant Joan de Déu"
+        }
+      ]
+    },
+    "communities": {
+      "title": "Les Nostres Comunitats",
+      "list": [
+        {
+          "icon": "🎭",
+          "text": "<strong>Blood on the Clocktower</strong> – Jocs de rols ocults (mín. 2 partides/setmana)"
+        },
+        {
+          "icon": "🌍",
+          "text": "<strong>Catan</strong> – Comunitat activa amb torneigs freqüents"
+        },
+        {
+          "icon": "⚔️",
+          "text": "<strong>Unmatched</strong> – Joc d'enfrontaments, amb esdeveniments regulars"
+        },
+        {
+          "icon": "🕵️",
+          "text": "<strong>Rols ocults</strong> – Jocs de deducció social"
+        }
+      ]
+    },
+    "collaborations": {
+      "title": "Col·laboracions",
+      "categories": [
+        {
+          "title": "Editorials",
+          "items": [
+            "DEVIR",
+            "Maldito Games",
+            "GDM Games",
+            "Magic Box",
+            "Asmodee",
+            "Key Enigma",
+            "Toysline"
+          ]
+        },
+        {
+          "title": "Botigues",
+          "items": [
+            "Mathom",
+            "The Curiosity Shop",
+            "Gameria",
+            "Kaburi"
+          ]
+        },
+        {
+          "title": "Entitats",
+          "items": [
+            "CNL",
+            "Espai de Joc 0-99",
+            "Espai de Jocs Sant Andreu",
+            "Movistar Center",
+            "BNGrup",
+            "Checkpoint Gaming"
+          ]
+        }
+      ]
+    },
+    "socialReach": {
+      "title": "Abast a Xarxes Socials",
+      "platform": "Plataforma",
+      "followers": "Seguidors",
+      "platforms": [
+        {
+          "name": "Instagram",
+          "followers": "10,2k"
+        },
+        {
+          "name": "Meetup",
+          "followers": "10,7k"
+        },
+        {
+          "name": "WhatsApp",
+          "followers": "1,8k"
+        },
+        {
+          "name": "Telegram",
+          "followers": "1k"
+        }
+      ]
+    },
+    "mediaPresence": {
+      "title": "Presència en Mitjans",
+      "viewArticles": "Veure articles i clips",
+      "outlets": [
+        {
+          "text": "<strong>El Periódico</strong> (diversos articles)"
+        },
+        {
+          "text": "<strong>RTVE</strong> – <em>Punts de Vista</em> i <em>Culturas 2</em>"
+        },
+        {
+          "text": "<strong>Time Out</strong>, <strong>2d6 Magazine</strong>"
+        },
+        {
+          "text": "<strong>Vidas Infinitas</strong> (podcast)"
+        },
+        {
+          "text": "<strong>Sara Postcard</strong> (Reel viral)"
+        },
+        {
+          "text": "<strong>Cadena Ser – Aquí Barcelona</strong>"
+        }
+      ]
+    },
+    "whatWeOffer": {
+      "seeking": {
+        "title": "Què busquem?",
+        "items": [
+          "Nous espais",
+          "Patrocinadors",
+          "Suport en difusió i creació d'esdeveniments"
+        ]
+      },
+      "providing": {
+        "title": "Què oferim?",
+        "items": [
+          "Visibilitat i publicitat",
+          "Aparició en materials promocionals",
+          "Presència física en esdeveniments"
+        ]
+      }
+    },
+    "gallery": {
+      "title": "Recopilatori Fotogràfic",
+      "placeholder": "Galeria fotogràfica properament",
+      "viewGallery": "Veure galeria completa"
+    },
+    "recommendedGames": {
+      "title": "Jocs Recomanats",
+      "categories": [
+        {
+          "title": "Sou dos?",
+          "games": ["Jaipur", "Azul", "Lost Cities"]
+        },
+        {
+          "title": "Festa?",
+          "games": ["Secret Hitler", "Wavelength", "Scrawl"]
+        },
+        {
+          "title": "Alguna cosa ràpida?",
+          "games": ["Danger", "Virus", "Trio", "Hanabi"]
+        },
+        {
+          "title": "Més complex?",
+          "games": ["Terraforming Mars", "Bitoku", "Darwin's Journey"]
+        }
+      ]
+    },
+    "location": {
+      "title": "Ubicació",
+      "venue": "L'Estació Espai Gastronòmic",
+      "address": "Av. del Marquès de l'Argentera, 6, 8 – 08002 Barcelona",
+      "description": "Més de 300 jocs de taula t'estan esperant."
+    },
+    "contact": {
+      "title": "Contacte",
+      "links": [
+        {
+          "icon": "📧",
+          "text": "hola@kleff.es",
+          "url": "mailto:hola@kleff.es"
+        },
+        {
+          "icon": "🌐",
+          "text": "kleff.es",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📱",
+          "text": "Instagram @kleff.bcn",
+          "url": "https://www.instagram.com/kleff.bcn"
+        },
+        {
+          "icon": "💬",
+          "text": "WhatsApp i Telegram",
+          "url": "https://kleff.es"
+        },
+        {
+          "icon": "📍",
+          "text": "Meetup",
+          "url": "https://www.meetup.com/es/k-leff"
+        }
+      ]
+    },
+    "cta": {
+      "question1": "T'agraden els jocs de taula? Vols conèixer gent nova i jugar mentre prens alguna cosa?",
+      "callToAction": "Uneix-te a la comunitat <strong>KLEFFER</strong> i no et perdis res!"
+    }
+  },
   "contact": {
     "title": "Posa't en Contacte",
     "subtitle": "Preparat per unir-te a la nostra comunitat de jocs de taula?",
     "email": "Envia'ns un email",
     "location": "Ubicació",
-    "socialMedia": "Segueix-nos a les xarxes socials",
+    "socialMedia": "Segueix-nos a xarxes socials",
     "joinUs": "Uneix-te a la Nostra Comunitat"
   },
   "footer": {
@@ -50,8 +458,8 @@
     "terms": "Termes de Servei"
   },
   "language": {
-    "en": "Anglès",
-    "es": "Espanyol",
-    "ca": "Català"
+    "en": "English",
+    "es": "Spanish",
+    "ca": "Catalan"
   }
 } 
