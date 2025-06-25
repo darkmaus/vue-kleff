@@ -64,7 +64,7 @@
             <p>{{ $t('aboutPage.team.subtitle') }}</p>
           </div>
           <div class="team-grid">
-            <div class="team-member animate-on-scroll" v-for="(member, index) in $t('aboutPage.team.members')" :key="index">
+            <div class="team-member animate-on-scroll" v-for="(member, index) in ($t('aboutPage.team.members') as unknown as TeamMember[])" :key="index">
               <div class="member-avatar">
                 <div class="avatar-placeholder">{{ member.emoji }}</div>
               </div>
@@ -84,7 +84,7 @@
             <p>{{ $t('aboutPage.achievements.subtitle') }}</p>
           </div>
           <div class="achievements-grid">
-            <div class="achievement-card animate-on-scroll" v-for="(achievement, index) in $t('aboutPage.achievements.list')" :key="index">
+            <div class="achievement-card animate-on-scroll" v-for="(achievement, index) in ($t('aboutPage.achievements.list') as unknown as Achievement[])" :key="index">
               <div class="achievement-icon">{{ achievement.icon }}</div>
               <h3>{{ achievement.title }}</h3>
               <p>{{ achievement.description }}</p>
@@ -98,7 +98,7 @@
       <section class="stats-section">
         <div class="container">
           <div class="stats-grid">
-            <div class="stat-card animate-on-scroll" v-for="(stat, index) in $t('aboutPage.stats.list')" :key="index">
+            <div class="stat-card animate-on-scroll" v-for="(stat, index) in ($t('aboutPage.stats.list') as unknown as Stat[])" :key="index">
               <div class="stat-number">{{ stat.number }}</div>
               <div class="stat-label">{{ stat.label }}</div>
             </div>
@@ -129,6 +129,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import type { TeamMember, Achievement, Stat } from '../types/locale'
 
 const animatedElements = ref<HTMLElement[]>([])
 

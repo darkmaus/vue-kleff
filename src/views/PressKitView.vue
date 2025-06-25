@@ -24,7 +24,7 @@
           <div class="content-wrapper">
             <p class="description" v-html="$t('pressKit.whoWeAre.description')"></p>
             <ul class="stats-list">
-              <li v-for="(stat, index) in $t('pressKit.whoWeAre.stats')" :key="index">
+              <li v-for="(stat, index) in ($t('pressKit.whoWeAre.stats') as unknown as StatItem[])" :key="index">
                 <span class="stat-icon">{{ stat.icon }}</span>
                 <span class="stat-text" v-html="stat.text"></span>
               </li>
@@ -41,7 +41,7 @@
           </div>
           <div class="content-wrapper">
             <ul class="audience-list">
-              <li v-for="(audience, index) in $t('pressKit.targetAudience.items')" :key="index">
+              <li v-for="(audience, index) in ($t('pressKit.targetAudience.items') as unknown as AudienceItem[])" :key="index">
                 <span class="audience-icon">{{ audience.icon }}</span>
                 <span class="audience-text" v-html="audience.text"></span>
               </li>
@@ -67,7 +67,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(event, index) in $t('pressKit.events.list')" :key="index" class="animate-on-scroll">
+                  <tr v-for="(event, index) in ($t('pressKit.events.list') as unknown as Event[])" :key="index" class="animate-on-scroll">
                     <td class="frequency">{{ event.frequency }}</td>
                     <td class="event-name"><strong>{{ event.name }}</strong></td>
                     <td class="description" v-html="event.description"></td>
@@ -87,7 +87,7 @@
           </div>
           <div class="content-wrapper">
             <ul class="communities-list">
-              <li v-for="(community, index) in $t('pressKit.communities.list')" :key="index">
+              <li v-for="(community, index) in ($t('pressKit.communities.list') as unknown as Community[])" :key="index">
                 <span class="community-icon">{{ community.icon }}</span>
                 <span class="community-text" v-html="community.text"></span>
               </li>
@@ -104,7 +104,7 @@
           </div>
           <div class="content-wrapper">
             <div class="collaborations-grid">
-              <div class="collab-category animate-on-scroll" v-for="(category, index) in $t('pressKit.collaborations.categories')" :key="index">
+              <div class="collab-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.collaborations.categories') as unknown as CollaborationCategory[])" :key="index">
                 <h3>{{ category.title }}</h3>
                 <ul class="collab-list">
                   <li v-for="(item, itemIndex) in category.items" :key="itemIndex">{{ item }}</li>
@@ -131,7 +131,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(platform, index) in $t('pressKit.socialReach.platforms')" :key="index" class="animate-on-scroll">
+                  <tr v-for="(platform, index) in ($t('pressKit.socialReach.platforms') as unknown as Platform[])" :key="index" class="animate-on-scroll">
                     <td class="platform-name">{{ platform.name }}</td>
                     <td class="platform-followers">{{ platform.followers }}</td>
                   </tr>
@@ -150,7 +150,7 @@
           </div>
           <div class="content-wrapper">
             <ul class="media-list">
-              <li v-for="(media, index) in $t('pressKit.mediaPresence.outlets')" :key="index">
+              <li v-for="(media, index) in ($t('pressKit.mediaPresence.outlets') as unknown as MediaOutlet[])" :key="index">
                 <span class="media-text" v-html="media.text"></span>
               </li>
             </ul>
@@ -215,7 +215,7 @@
           </div>
           <div class="content-wrapper">
             <div class="games-grid">
-              <div class="game-category animate-on-scroll" v-for="(category, index) in $t('pressKit.recommendedGames.categories')" :key="index">
+              <div class="game-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.recommendedGames.categories') as unknown as GameCategory[])" :key="index">
                 <h3><strong>{{ category.title }}</strong></h3>
                 <p class="games-list">{{ category.games.join(', ') }}</p>
               </div>
@@ -248,7 +248,7 @@
           </div>
           <div class="content-wrapper">
             <ul class="contact-list">
-              <li v-for="(contact, index) in $t('pressKit.contact.links')" :key="index">
+              <li v-for="(contact, index) in ($t('pressKit.contact.links') as unknown as ContactLink[])" :key="index">
                 <span class="contact-icon">{{ contact.icon }}</span>
                 <a :href="contact.url" target="_blank" class="contact-link">{{ contact.text }}</a>
               </li>
@@ -276,6 +276,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import type { StatItem, AudienceItem, Event, Community, CollaborationCategory, Platform, MediaOutlet, GameCategory, ContactLink } from '../types/locale'
 
 // Intersection Observer for scroll animations
 onMounted(() => {
