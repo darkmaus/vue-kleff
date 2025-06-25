@@ -7,70 +7,70 @@
       </div>
       <div class="container">
         <div class="hero-content animate-on-scroll">
-          <h1 class="hero-title">🎲 {{ $t('pressKit.heroTitle') }}</h1>
-          <p class="hero-subtitle">{{ $t('pressKit.heroSubtitle') }}</p>
+          <h1 class="hero-title">🎲 PRESS KIT – KLEFF</h1>
+          <p class="hero-subtitle">La comunidad de juegos de mesa más grande de Europa</p>
         </div>
       </div>
     </section>
 
     <!-- Main Content -->
     <div class="main-content">
-      <!-- Who We Are Section -->
+      <!-- ¿Quiénes Somos? Section -->
       <section class="who-we-are-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>📍 {{ $t('pressKit.whoWeAre.title') }}</h2>
+            <h2>📍 ¿Quiénes somos?</h2>
           </div>
           <div class="content-wrapper">
-            <p class="description" v-html="$t('pressKit.whoWeAre.description')"></p>
+            <p class="description">KLEFF nace a finales de 2019 como el primer <strong>afterwork lúdico</strong> de Barcelona. Nuestro objetivo es <strong>conectar personas</strong> a través de juegos de mesa en un ambiente inclusivo y multicultural.</p>
             <ul class="stats-list">
-              <li v-for="(stat, index) in ($t('pressKit.whoWeAre.stats') as unknown as StatItem[])" :key="index">
-                <span class="stat-icon">{{ stat.icon }}</span>
-                <span class="stat-text" v-html="stat.text"></span>
-              </li>
+              <li><strong>Sede actual:</strong> L'Estació - Espai Gastronòmic, Estació de França</li>
+              <li><strong>Asistentes:</strong> +300 por evento</li>
+              <li><strong>Juegos disponibles:</strong> +200</li>
+              <li><strong>Crecimiento anual:</strong> 25%</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Target Audience Section -->
+      <!-- Público Objetivo Section -->
       <section class="target-audience-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>🎯 {{ $t('pressKit.targetAudience.title') }}</h2>
+            <h2>🎯 Público Objetivo</h2>
           </div>
           <div class="content-wrapper">
             <ul class="audience-list">
-              <li v-for="(audience, index) in ($t('pressKit.targetAudience.items') as unknown as AudienceItem[])" :key="index">
-                <span class="audience-icon">{{ audience.icon }}</span>
-                <span class="audience-text" v-html="audience.text"></span>
-              </li>
+              <li>Idiomas: Español, Catalán e Inglés</li>
+              <li>Jugadores: novatos, casuales y expertos</li>
+              <li>Edad: desde 14 años (media: 20–35 años)</li>
+              <li>Formato: personas solas, parejas, grupos, familias</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Event Types Section -->
+      <!-- Tipos de Eventos Section -->
       <section class="events-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>📅 {{ $t('pressKit.events.title') }}</h2>
+            <h2>📅 Tipos de Eventos</h2>
           </div>
           <div class="content-wrapper">
             <div class="table-container">
               <table class="events-table">
                 <thead>
                   <tr>
-                    <th>{{ $t('pressKit.events.frequency') }}</th>
-                    <th>{{ $t('pressKit.events.event') }}</th>
-                    <th>{{ $t('pressKit.events.description') }}</th>
+                    <th>Frecuencia</th>
+                    <th>Evento</th>
+                    <th>Descripción</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(event, index) in ($t('pressKit.events.list') as unknown as Event[])" :key="index" class="animate-on-scroll">
+                  <tr v-for="event in events" :key="event.name" class="animate-on-scroll">
                     <td class="frequency">{{ event.frequency }}</td>
                     <td class="event-name"><strong>{{ event.name }}</strong></td>
-                    <td class="description" v-html="event.description"></td>
+                    <td class="description">{{ event.description }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -79,35 +79,47 @@
         </div>
       </section>
 
-      <!-- Communities Section -->
+      <!-- Comunidades Section -->
       <section class="communities-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>🧠 {{ $t('pressKit.communities.title') }}</h2>
+            <h2>🧠 Nuestras Comunidades</h2>
           </div>
           <div class="content-wrapper">
             <ul class="communities-list">
-              <li v-for="(community, index) in ($t('pressKit.communities.list') as unknown as Community[])" :key="index">
-                <span class="community-icon">{{ community.icon }}</span>
-                <span class="community-text" v-html="community.text"></span>
-              </li>
+              <li><strong>Blood on the Clocktower:</strong> mínimo 2 partidas semanales</li>
+              <li><strong>Catan:</strong> torneos y comunidad activa</li>
+              <li><strong>Unmatched:</strong> torneos regulares</li>
+              <li><strong>Roles ocultos:</strong> deducción social e identidades secretas</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Collaborations Section -->
+      <!-- Colaboraciones Section -->
       <section class="collaborations-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>🤝 {{ $t('pressKit.collaborations.title') }}</h2>
+            <h2>🤝 Colaboraciones</h2>
           </div>
           <div class="content-wrapper">
             <div class="collaborations-grid">
-              <div class="collab-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.collaborations.categories') as unknown as CollaborationCategory[])" :key="index">
-                <h3>{{ category.title }}</h3>
+              <div class="collab-category animate-on-scroll">
+                <h3>Editoriales</h3>
                 <ul class="collab-list">
-                  <li v-for="(item, itemIndex) in (category.items || [])" :key="itemIndex">{{ item }}</li>
+                  <li v-for="item in editoriales" :key="item">{{ item }}</li>
+                </ul>
+              </div>
+              <div class="collab-category animate-on-scroll">
+                <h3>Tiendas</h3>
+                <ul class="collab-list">
+                  <li v-for="item in tiendas" :key="item">{{ item }}</li>
+                </ul>
+              </div>
+              <div class="collab-category animate-on-scroll">
+                <h3>Entidades</h3>
+                <ul class="collab-list">
+                  <li v-for="item in entidades" :key="item">{{ item }}</li>
                 </ul>
               </div>
             </div>
@@ -115,25 +127,25 @@
         </div>
       </section>
 
-      <!-- Social Media Reach Section -->
+      <!-- Redes Sociales Section -->
       <section class="social-reach-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>📈 {{ $t('pressKit.socialReach.title') }}</h2>
+            <h2>📈 Alcance en Redes Sociales</h2>
           </div>
           <div class="content-wrapper">
             <div class="table-container">
               <table class="social-table">
                 <thead>
                   <tr>
-                    <th>{{ $t('pressKit.socialReach.platform') }}</th>
-                    <th>{{ $t('pressKit.socialReach.followers') }}</th>
+                    <th>Plataforma</th>
+                    <th>Seguidores</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(platform, index) in ($t('pressKit.socialReach.platforms') as unknown as Platform[])" :key="index" class="animate-on-scroll">
-                    <td class="platform-name">{{ platform.name }}</td>
-                    <td class="platform-followers">{{ platform.followers }}</td>
+                  <tr v-for="(count, network) in redes" :key="network" class="animate-on-scroll">
+                    <td class="platform-name">{{ network }}</td>
+                    <td class="platform-followers">{{ count }}</td>
                   </tr>
                 </tbody>
               </table>
@@ -142,42 +154,41 @@
         </div>
       </section>
 
-      <!-- Media Presence Section -->
+      <!-- Presencia en Medios Section -->
       <section class="media-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>📰 {{ $t('pressKit.mediaPresence.title') }}</h2>
+            <h2>📰 Presencia en Medios</h2>
           </div>
           <div class="content-wrapper">
             <ul class="media-list">
-              <li v-for="(media, index) in ($t('pressKit.mediaPresence.outlets') as unknown as MediaOutlet[])" :key="index">
-                <span class="media-text" v-html="media.text"></span>
+              <li v-for="link in medios" :key="link.url">
+                <a :href="link.url" target="_blank" class="text-blue-600 underline">{{ link.name }}</a>
               </li>
             </ul>
-            <div class="media-link animate-on-scroll">
-              <a href="https://drive.google.com/drive/folders/1mff6ikHdJJ44H-lS-qsC-mHvG5F40Q3a?usp=drive_link" target="_blank" class="btn-primary">
-                {{ $t('pressKit.mediaPresence.viewArticles') }}
-              </a>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- What We Offer Section -->
+      <!-- ¿Qué Buscamos / Ofrecemos? Section -->
       <section class="offer-section">
         <div class="container">
           <div class="content-wrapper">
             <div class="offer-grid">
               <div class="offer-card animate-on-scroll">
-                <h3>🎯 {{ $t('pressKit.whatWeOffer.seeking.title') }}</h3>
+                <h3>🎯 ¿Qué buscamos?</h3>
                 <ul class="offer-list">
-                  <li v-for="(item, index) in $t('pressKit.whatWeOffer.seeking.items')" :key="index">{{ item }}</li>
+                  <li>Espacios nuevos</li>
+                  <li>Patrocinio económico</li>
+                  <li>Apoyo en difusión y eventos</li>
                 </ul>
               </div>
               <div class="offer-card animate-on-scroll">
-                <h3>💡 {{ $t('pressKit.whatWeOffer.providing.title') }}</h3>
+                <h3>💡 ¿Qué ofrecemos?</h3>
                 <ul class="offer-list">
-                  <li v-for="(item, index) in $t('pressKit.whatWeOffer.providing.items')" :key="index">{{ item }}</li>
+                  <li>Publicidad y visibilidad</li>
+                  <li>Aparición en carteles</li>
+                  <li>Presencia en eventos</li>
                 </ul>
               </div>
             </div>
@@ -185,21 +196,20 @@
         </div>
       </section>
 
-      <!-- Photo Gallery Section -->
+      <!-- Galería Section -->
       <section class="gallery-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>🖼 {{ $t('pressKit.gallery.title') }}</h2>
+            <h2>🖼 Recopilatorio Fotográfico</h2>
           </div>
           <div class="content-wrapper">
             <div class="gallery-content animate-on-scroll">
-              <div class="gallery-placeholder">
-                <div class="placeholder-icon">📸</div>
-                <p>{{ $t('pressKit.gallery.placeholder') }}</p>
+              <div class="gallery-grid">
+                <img v-for="(img, index) in fotos" :key="index" :src="img" class="gallery-image" />
               </div>
               <div class="gallery-link">
                 <a href="https://drive.google.com/drive/folders/1mff6ikHdJJ44H-lS-qsC-mHvG5F40Q3a" target="_blank" class="btn-secondary">
-                  {{ $t('pressKit.gallery.viewGallery') }}
+                  Ver galería completa
                 </a>
               </div>
             </div>
@@ -207,64 +217,64 @@
         </div>
       </section>
 
-      <!-- Recommended Games Section -->
+      <!-- Juegos Recomendados Section -->
       <section class="games-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <h2>🕹 {{ $t('pressKit.recommendedGames.title') }}</h2>
+            <h2>🕹 Juegos Recomendados</h2>
           </div>
           <div class="content-wrapper">
-            <div class="games-grid">
-              <div class="game-category animate-on-scroll" v-for="(category, index) in ($t('pressKit.recommendedGames.categories') as unknown as GameCategory[])" :key="index">
-                <h3><strong>{{ category.title }}</strong></h3>
-                <p class="games-list">{{ category.games ? category.games.join(', ') : '' }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Location Section -->
-      <section class="location-section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <h2>📍 {{ $t('pressKit.location.title') }}</h2>
-          </div>
-          <div class="content-wrapper">
-            <div class="location-content animate-on-scroll">
-              <h3><strong>{{ $t('pressKit.location.venue') }}</strong></h3>
-              <p class="venue-address">{{ $t('pressKit.location.address') }}</p>
-              <p class="venue-description">{{ $t('pressKit.location.description') }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact-section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <h2>📞 {{ $t('pressKit.contact.title') }}</h2>
-          </div>
-          <div class="content-wrapper">
-            <ul class="contact-list">
-              <li v-for="(contact, index) in ($t('pressKit.contact.links') as unknown as ContactLink[])" :key="index">
-                <span class="contact-icon">{{ contact.icon }}</span>
-                <a :href="contact.url" target="_blank" class="contact-link">{{ contact.text }}</a>
-              </li>
+            <ul class="games-list">
+              <li><strong>¿Sois dos?</strong> Jaipur, Azul, Lost Cities</li>
+              <li><strong>¿Fiesta?</strong> Secret Hitler, Wavelength, Scrawl</li>
+              <li><strong>¿Algo rápido?</strong> Danger, Virus, Trio, Hanabi</li>
+              <li><strong>¿Más complejo?</strong> Terraforming Mars, Bitoku, Darwin's Journey</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Call to Action Section -->
+      <!-- Ubicación Section -->
+      <section class="location-section">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <h2>📍 Ubicación</h2>
+          </div>
+          <div class="content-wrapper">
+            <div class="location-content animate-on-scroll">
+              <h3><strong>L'Estació Espai Gastronòmic</strong></h3>
+              <p class="venue-address">Av. del Marquès de l'Argentera, 6, 8 – 08002, Barcelona</p>
+              <p class="venue-description">Más de 300 juegos de mesa te están esperando.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto Section -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <h2>📞 Contacto</h2>
+          </div>
+          <div class="content-wrapper">
+            <ul class="contact-list">
+              <li>Email: <a href="mailto:hola@kleff.es" class="contact-link">hola@kleff.es</a></li>
+              <li>Web: <a href="https://kleff.es" target="_blank" class="contact-link">kleff.es</a></li>
+              <li>Instagram: <a href="https://www.instagram.com/kleff.bcn" target="_blank" class="contact-link">@kleff.bcn</a></li>
+              <li>Meetup: <a href="https://www.meetup.com/es/k-leff" target="_blank" class="contact-link">KLEFF en Meetup</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mensaje Final Section -->
       <section class="cta-section">
         <div class="container">
           <div class="content-wrapper">
             <div class="cta-content animate-on-scroll">
               <blockquote class="cta-quote">
-                <p>{{ $t('pressKit.cta.question1') }}</p>
-                <p class="cta-highlight" v-html="$t('pressKit.cta.callToAction')"></p>
+                <p>¿Te gustan los juegos de mesa? ¿Quieres conocer gente nueva y jugar mientras tomas algo?</p>
+                <p class="cta-highlight">¡Únete a la comunidad KLEFFER y no te pierdas nada!</p>
               </blockquote>
             </div>
           </div>
@@ -276,7 +286,41 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import type { StatItem, AudienceItem, Event, Community, CollaborationCategory, Platform, MediaOutlet, GameCategory, ContactLink } from '../types/locale'
+
+// Datos de ejemplo – sustituir por props o fetch dinámico si se necesita
+const events = [
+  { frequency: 'Semanal', name: 'Noche de juegos', description: 'Partidas de Catan, Blood on the Clocktower, etc.' },
+  { frequency: 'Puntual', name: 'Slow Dating Lúdico', description: 'Conexión entre personas mediante juegos sociales.' },
+  { frequency: 'Mensual', name: 'Torneos', description: 'Competencias de distintos juegos.' },
+  { frequency: 'Mensual', name: 'Jornadas de demostración', description: 'Editoriales enseñan a jugar sus juegos.' },
+  { frequency: 'Anual', name: 'Carnival Game Night', description: 'Noche temática con disfraces.' },
+  { frequency: 'Anual', name: 'Halloween Game Night', description: 'Evento especial temático Halloween.' },
+  { frequency: 'Anual', name: 'X-Mas Game Night', description: 'Evento benéfico para niños con cáncer.' }
+];
+
+const editoriales = ['DEVIR', 'Maldito Games', 'GDM Games', 'Magic Box Games', 'Asmodee', 'Key Enigma', 'Toysline'];
+const tiendas = ['Mathom', 'The Curiosity Shop', 'Gameria', 'Kaburi'];
+const entidades = ['CNL', 'Espai de Joc 0-99', 'Espai de Jocs Sant Andreu', 'Movistar Center', 'BNGrup', 'Checkpoint Gaming'];
+
+const redes = {
+  Instagram: '10,2k',
+  Meetup: '10,7k',
+  Whatsapp: '1,8k',
+  Telegram: '1k'
+};
+
+const medios = [
+  { name: 'El Periódico', url: 'https://www.elperiodico.com/es/...' },
+  { name: 'RTVE – Punts de Vista', url: 'https://www.rtve.es/...' },
+  { name: 'Time Out', url: 'https://www.timeout.es/...' },
+  // Agrega más enlaces si lo deseas
+];
+
+const fotos = [
+  'https://drive.google.com/uc?export=view&id=IMAGE_ID_1',
+  'https://drive.google.com/uc?export=view&id=IMAGE_ID_2'
+  // Añadir más imágenes si es necesario
+];
 
 // Intersection Observer for scroll animations
 onMounted(() => {
@@ -407,36 +451,15 @@ section {
 }
 
 .stats-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
 .stats-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: #ECE9E6;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.stats-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(199, 61, 66, 0.1);
-}
-
-.stat-icon {
-  font-size: 2rem;
-  color: #C73D42;
-}
-
-.stat-text {
-  font-size: 1rem;
-  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 /* ===========================================
@@ -447,36 +470,15 @@ section {
 }
 
 .audience-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
 .audience-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.audience-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(199, 61, 66, 0.1);
-}
-
-.audience-icon {
-  font-size: 2rem;
-  color: #C73D42;
-}
-
-.audience-text {
-  font-size: 1rem;
-  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 /* ===========================================
@@ -538,36 +540,15 @@ section {
 }
 
 .communities-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
 .communities-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.communities-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(199, 61, 66, 0.1);
-}
-
-.community-icon {
-  font-size: 2rem;
-  color: #C73D42;
-}
-
-.community-text {
-  font-size: 1rem;
-  color: #333;
+  margin-bottom: 0.5rem;
 }
 
 /* ===========================================
@@ -603,18 +584,13 @@ section {
 }
 
 .collab-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 .collab-list li {
   padding: 0.5rem 0;
   color: #666;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.collab-list li:last-child {
-  border-bottom: none;
 }
 
 /* ===========================================
@@ -668,27 +644,15 @@ section {
 }
 
 .media-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.media-list li {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.media-list li:last-child {
-  border-bottom: none;
-}
-
-.media-text {
-  font-size: 1rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #333;
 }
 
-.media-link {
-  text-align: center;
+.media-list li {
+  margin-bottom: 0.5rem;
 }
 
 /* ===========================================
@@ -725,18 +689,13 @@ section {
 }
 
 .offer-list {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.5rem;
 }
 
 .offer-list li {
   padding: 0.5rem 0;
   color: #666;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.offer-list li:last-child {
-  border-bottom: none;
 }
 
 /* ===========================================
@@ -750,22 +709,19 @@ section {
   text-align: center;
 }
 
-.gallery-placeholder {
-  background: #ECE9E6;
-  padding: 3rem;
-  border-radius: 12px;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.placeholder-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  color: #C73D42;
-}
-
-.gallery-placeholder p {
-  color: #666;
-  font-size: 1.1rem;
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-link {
@@ -779,36 +735,16 @@ section {
   background: #ECE9E6;
 }
 
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.game-category {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.game-category:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(199, 61, 66, 0.15);
-}
-
-.game-category h3 {
-  font-size: 1.3rem;
-  color: #1E1E1E;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
 .games-list {
-  color: #666;
-  line-height: 1.6;
-  text-align: center;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.games-list li {
+  margin-bottom: 0.5rem;
 }
 
 /* ===========================================
@@ -848,42 +784,27 @@ section {
 }
 
 .contact-list {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  list-style: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
 .contact-list li {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.contact-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(199, 61, 66, 0.1);
-}
-
-.contact-icon {
-  font-size: 1.5rem;
-  color: #C73D42;
+  margin-bottom: 0.5rem;
 }
 
 .contact-link {
+  color: #C73D42;
   text-decoration: none;
-  color: #1E1E1E;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #C73D42;
+  color: #D1636D;
+  text-decoration: underline;
 }
 
 /* ===========================================
@@ -923,25 +844,6 @@ section {
 /* ===========================================
    BUTTONS
    =========================================== */
-.btn-primary {
-  display: inline-block;
-  background: #C73D42;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background: #D1636D;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(199, 61, 66, 0.3);
-}
-
 .btn-secondary {
   display: inline-block;
   background: #E59C6F;
@@ -996,19 +898,12 @@ section {
     font-size: 2rem;
   }
   
-  .stats-list,
-  .audience-list,
-  .communities-list {
-    grid-template-columns: 1fr;
-  }
-  
   .collaborations-grid,
-  .offer-grid,
-  .games-grid {
+  .offer-grid {
     grid-template-columns: 1fr;
   }
   
-  .contact-list {
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
   
